@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New Task</title>
+    <link rel="stylesheet" th:href="@{/add-todo.css}">
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/save}" th:object="${todo}" method="POST" class="center-form">
+        <input type="hidden" th:field="*{id}">
+        <input type="text" th:field="*{task}" placeholder="Add a new task" class="form-control">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

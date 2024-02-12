@@ -1,0 +1,25 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align at the top */
+    height: 100vh;
+    padding-top: 50px; /* Add some top padding */
+}
+
+.center-form {
+    width: 300px;
+    text-align: center;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
